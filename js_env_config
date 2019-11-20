@@ -1,0 +1,9 @@
+[commands]
+test = echo "Error: no test specified" && exit 1
+serve = cp -r static build/ && cp src/index_new.html build/index.html && ./node_modules/beefy/bin/beefy --cwd build/ --live build/main.js 12000 -- --standalone src/main.js -o build/bundle.js
+build = cp src/index_new.html build/index.html && browserify src/main.js -o build/bundle.js
+run = echo "No command"
+start = echo "No command"
+
+[server]
+port = 11223

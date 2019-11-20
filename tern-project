@@ -1,0 +1,15 @@
+{
+    "ecmaVersion": 6,
+    "libs": [
+        "browser"
+    ],
+    "loadEagerly": ["src/opencv.js"],
+    "dontLoad": [],
+    "plugins": {
+        "node": {},
+        "modules": {},
+        "es_modules": {},
+        "requirejs": {},
+        "commonjs": {}
+    }
+}
